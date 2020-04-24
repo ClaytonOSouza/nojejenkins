@@ -1,7 +1,7 @@
 pipeline {
    environment {
      dockerRegistry = "claytondevops/nodejenkins"
-     dockerRegistryCredential = 'Almerita@040876$#@'
+     dockerRegistryCredential = 'dockerhub'
      dockerImage = ''
    }
    agent any
