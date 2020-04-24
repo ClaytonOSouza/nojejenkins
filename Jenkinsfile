@@ -14,7 +14,7 @@ git 'https://github.com/ClaytonOSouza/nojejenkins.git'
 stage('Building our image') {
 steps{
 script {
-dockerImage = docker.build registry + ":$BUILD_NUMBER"
+dockerImage = docker.build registry + ":$tagname"
 }
 }
 }
@@ -29,7 +29,7 @@ dockerImage.push()
 }
 stage('Cleaning up') {
 steps{
-sh "docker rmi $registry:$BUILD_NUMBER"
+sh "docker rmi $registry:$tagname"
 }
 }
 }
