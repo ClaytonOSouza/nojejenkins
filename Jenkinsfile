@@ -11,11 +11,6 @@ pipeline {
          git 'https://github.com/ClaytonOSouza/nojejenkins.git'
        }
      }
-     stage('Build') {
-        steps {
-          sh 'npm install'
-        }
-     }
      stage('Test') {
        steps {
          sh 'npm test'
