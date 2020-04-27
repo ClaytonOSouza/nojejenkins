@@ -1,0 +1,4 @@
+.vccode
+*.log
+dist
+.DS_Store
