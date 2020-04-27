@@ -14,7 +14,7 @@ spec:
         tier: frontend
     spec:
       containers:
-      - image: claytondevops/nodejenkins:28
+      - image: claytondevops/nodejenkins:30
         name: sitehomol
         ports:
         - containerPort: 80
