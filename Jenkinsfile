@@ -1,6 +1,6 @@
 pipeline {
     environment {
-	registry = "claytondevops/nodejenkins"
+	registry = "claytondevops/sitemeunode"
 	registryCredential = 'dockerhub'
 	dockerImage = ''
     }
